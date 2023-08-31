@@ -24,7 +24,6 @@ void main() async {
     center: true,
     backgroundColor: Colors.transparent,
     skipTaskbar: false,
-    titleBarStyle: TitleBarStyle.hidden,
     windowButtonVisibility: true,
     minimumSize: const Size(400, 250),
     maximumSize: const Size(800, 600),
@@ -36,9 +35,9 @@ void main() async {
     await windowManager.hide();
   });
 
-  await const MacosWindowUtilsConfig(
-    toolbarStyle: NSWindowToolbarStyle.unified,
-  ).apply();
+  // await const MacosWindowUtilsConfig(
+  //   toolbarStyle: NSWindowToolbarStyle.unified,
+  // ).apply();
 
   runApp(const App());
 }
